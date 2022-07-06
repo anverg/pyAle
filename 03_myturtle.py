@@ -35,13 +35,13 @@ t.shape('turtle')
 ## - usar el comando def seguido del nombre que queramos asignar a la función y ()
 ## - escribir lo que queramos que la función haga
 
-# def square():
-#     for i in range(4):
-#         t.forward(100)
-#         t.right(90)
+def square():
+    for i in range(4):
+        t.forward(100)
+        t.right(90)
 
 ## Para que la función se ejecute, hay que llamarla
-# square()
+square()
 
 ## También podemos usar esta función en un bucle para construir algo más complicado. Por ejemplo, para dibujar un cuadrado, girar un poco a la derecha, hacer otro cuadrado, girar un poco a la derecha, y repetir esos pasos varias veces, tiene sentido poner la función dentro de un bucle.
 
@@ -122,7 +122,7 @@ def squareCircle():
         square(200)
         t.right(5)
 
-squareCircle()
+# squareCircle()
 
 ## COMO HACER QUE LAS VARIABLES VARÍEN
 

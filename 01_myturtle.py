@@ -1,10 +1,13 @@
+# Versiones de python
+# IDEs: Integrated Development Environment (VsCode)
+# Entornos virtuales
+
 import turtle
 window = turtle.Screen()
 turtle.delay(100)
 
 # t = turtle.Turtle()
 t = turtle.Pen()
-
 
 # UNO
 t.shape('turtle')
@@ -16,8 +19,8 @@ t.forward(100)
 
 # CHANGING DIRECTIONS
 
-# t.right(45) 
-# t.forward(150)
+t.right(45) 
+t.forward(150)
 
 
 # EXERCISE 1-­1: SQUARE DANCE 
