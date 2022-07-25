@@ -1,6 +1,5 @@
 ## https://docs.python.org/3/library/turtle.html#module-turtle
 
-
 import turtle
 window = turtle.Screen()
 # turtle.delay(25)
@@ -35,21 +34,21 @@ t.shape('turtle')
 ## - usar el comando def seguido del nombre que queramos asignar a la función y ()
 ## - escribir lo que queramos que la función haga
 
-def square():
+def cuadrado():
     for i in range(4):
         t.forward(100)
         t.right(90)
 
 ## Para que la función se ejecute, hay que llamarla
-square()
+# cuadrado()
 
 ## También podemos usar esta función en un bucle para construir algo más complicado. Por ejemplo, para dibujar un cuadrado, girar un poco a la derecha, hacer otro cuadrado, girar un poco a la derecha, y repetir esos pasos varias veces, tiene sentido poner la función dentro de un bucle.
 
 ## EXERCISE 1­-3: A CIRCLE OF SQUARES Write and run a function that draws 60 squares, turning right 5 degrees after each square. Use a loop! 
 
 
-# for i in range(60):
-#     square()
+# for i in range(61):
+#     cuadrado()
 #     t.right(5)
 
 
@@ -61,10 +60,10 @@ square()
 
 ## Cuando defines una función, puedes usar variables como parámetros de la función dentro de los paréntesis.
 
-# def square(sidelength): 
-#     for i in range(4): 
-#         t.forward(sidelength)
-#         t.right(90)
+def square(sidelength): 
+    for i in range(4): 
+        t.forward(sidelength)
+        t.right(90)
 
 # square(50)
 # square(80)
@@ -87,7 +86,7 @@ def square(sidelength=100):
 
 ## Ver Triangulo.png
 
-# def triangle(sidelength = 100):
+# def triangle(sidelength=100):
 #     for i in range(3):
 #         t.forward(sidelength)
 #         t.right(60)
@@ -148,12 +147,12 @@ x /= 4
 ## EXERCISE 1­5: TURTLE SPIRAL 
 ## Make a function to draw 60 squares, turning 5 degrees after each square and making each successive square bigger. Start at a length of 5 and increment 5 units every square.
 
-# def turtleSpiral(sidelength=5):
-#     # length = 5
-#     for i in range(60):
-#         square(sidelength)
-#         t.right(5)
-#         sidelength += 5
+def turtleSpiral(sidelength=5):
+    # length = 5
+    for i in range(60):
+        square(sidelength)
+        t.right(5)
+        sidelength += 5
 
 # turtleSpiral()
 
